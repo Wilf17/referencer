@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/contre-referencement.css" rel="stylesheet">
+    <link href="assets/css/fontawesome-free-6.2.0-web/css/all.min.css" rel="stylesheet">
+    <title>Contre-Référencer</title>
+</head>
+<body>
+  <header class="header row">
+    <div class="col">
+        <nav>
+            <i class="fa-solid fa-bars" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop"></i>
+              
+              <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="staticBackdropLabel">Offcanvas</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <div>
+                    I will not close if you click outside of me.
+                  </div>
+                </div>
+              </div>
+        </nav>
+    </div>
+    <div class="col acceuil">
+        Contre Référencement
+    </div>
+    <div class="col notification">
+        <button type="button" class="btn"><i class="fa-solid fa-bell fa-shake"></i>
+            <span class="translate-middle badge rounded-pill">
+            0
+        </button>
+    </div>
+</header>
+<main>
+    <section class="section3-referencer" id="infospathologies">
+        <div  class="div-form-referencer">
+          <form class="infopathologies" action="#" method="post" autocomplete="on">
+            <div class="row">
+              <div class="col-md-6">
+                <div><label class="" for="sympthomes">Choix des sympthomes relevés<span class="asterix">*</span></label></div>
+                <div class="pa">
+                    <select value="sympthomes-releves" name="sympthomes-releves" id="sympthomes">
+                      <option value="null">Sympthomes relevés</option>
+                      <option name="SYMPTHOMES-1">Maux de tête </option>
+                      <option name="SYMPTHOMES-2">Maux de ventre</option>
+                      <option name="SYMPTHOMES-3">Toux</option>
+                      <option name="SYMPTHOMES-4">....</option>
+                      <option name="SYMPTHOMES-5">....</option>
+                      <option name="SYMPTHOMES-6">....</option>
+                      <option name="SYMPTHOMES-7">....</option>
+                    </select>
+                </div>
+              </div>
+              <div class="col-md-6">
+                  <div><label class="" for="diagnostic">Diagnostics établis<span class="asterix">*</span> </label></div>
+                  <div class="pa"><textarea class="" id="diagnostic" name="diagnostic-etabli" placeholder="Diagnostics établis"></textarea></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div><label class="" for="traitement-effectuer">Traitements effectués au patient<span class="asterix">*</span> </label></div>
+                <div class="pa"><textarea class="" id="traitement-effectuer" name="traitement-effectuer" placeholder="Traitements effectués au patient"></textarea></div>
+              </div>
+              <div class="col-md-6">
+                <div><label class="" for="etat-traitement">Etat du traitement effectué au patient<span class="asterix">*</span> </label></div>
+                <div class="pa">
+                  <select value="etat-traitement" name="etat-traitement" id="etat-traitement">
+                    <option value="null">Etat du traitement </option>
+                    <option name="Etat-1">Terminé</option>
+                    <option name="Etat-2">En cours...</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div><label class="" for="issue-patient">Issue du patient<span class="asterix">*</span> </label></div>
+                <div class="pa">
+                  <select value="issue-patient" name="issue-patient" id="issue-patient">
+                    <option value="null">Issue du patient </option>
+                    <option name="Etat-1">Guérison</option>
+                    <option name="Etat-2">Décès</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div><label class="" for="erreur-releves">Notifier les erreurs relevées</label></div>
+                <div class="pa"><textarea class="" id="erreur-releves" name="erreur-releves" placeholder="Erreurs relevées..."></textarea></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div><label class="" for="recommandations">Vos recommandations</label></div>
+                <div class="pa"><textarea class="" id="recommandations" name="recommandations" placeholder="Recommandations..."></textarea></div>
+              </div>
+            </div>
+            <div class="row">
+              <span><a href="liste-referencement.html"><input type="button" class="btn btn-danger" id="precedent" value="Annuler"></a>
+              <input class="btn btn-primar" value="Enregistrer" id="Enregistrer" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop"></span>
+
+              <!-- **********************confirmation du contre-referencement*****************************************************-->
+                                               
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Vous confirmez l'envoi de la contre-référence ?</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                        <button type="button" class="btn btn-success">Envoyer</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </form>
+        </div>
+    </section>
+  </main>
+  <footer>
+    <div class="row footer-menu">
+      <div class="col"><a href="acceuil.html"><i class="fa-solid fa-house"></i></a><br><h6>Acceuil</h6></div>
+      <div class="col"><a href="liste-referencement.html"><i class="fa-solid fa-list-check"></i></a><br><h6>Liste</h6></div>
+      <div class="col"><a href="referencement.html"><i class="fa-solid fa-plus-circle"></i></a></div>
+      <div class="col"><a href=""><i class="fa-solid fa-map"></i></a><br><h6>Lorem</h6></div>
+      <div class="col"><a href=""><i class="fa-solid fa-user"></i></a><br><h6>Profil</h6></div>
+    </div>
+ </footer>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

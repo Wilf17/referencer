@@ -1,0 +1,81 @@
+/* 
+CSS de la page de connexion
+*/
+body{
+  background-color:#ebebeb;
+}
+.container-connexion-page{
+  background-color: white;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+.image-entete-connexion-page{
+  max-width: 70%;
+  margin-top:12%;
+  margin-bottom:0%;
+}
+@media(min-width:540px) {
+  .image-entete-connexion-page{
+    max-width: 35%;
+    margin-top:0%;
+    margin-bottom:0%;
+  }   
+  .container-connexion-page{
+    background-color: white;
+    margin:auto;
+    text-align: center;
+    width: 50%;
+    height: 50%;
+    margin-top:10%;
+  }
+}
+@media(min-width:820px){
+   .container-connexion-page{
+    margin-top:3%;
+  }
+}
+form{
+  padding: 10%;
+}
+input{
+  background-color: #fcf9f9;
+  border: 1px solid #ebebeb;
+  box-shadow: 1px 1px 1px #8a8a8a ;
+
+}
+.login-connexion-page,.password-connexion-page{
+  margin-bottom:25px;
+}
+#login,#password{
+  height:45px;
+  width:100%;
+}
+#connexion{
+  width:100%;
+  height:45px;
+  margin-bottom: 2%;
+  color: #fff;
+  border-radius: 2px 2px 2px 2px;
+  border: 1px solid #39c7ee;
+  background-color:#39c7ee;
+}
+.request-question-connexion-page{
+  text-align: left;
+}
+a{
+  text-decoration: none;
+  color:#666666;
+  font-size: 70%;
+  margin-left:4%;
+}
+a:hover{
+  color:#39c7ee;
+}
+.title-connexion-page h2{
+font-size: 15px;
+  color:#39c7ee;
+}
+/* 
+FIN CSS de la page de connexion
+*/

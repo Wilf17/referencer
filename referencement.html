@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/referencement.css" rel="stylesheet">
+    <link href="assets/css/fontawesome-free-6.2.0-web/css/all.min.css" rel="stylesheet">
+    <title>Referencer</title>
+</head>
+<body>
+  <header class="header row">
+    <div class="col">
+        <nav>
+            <i class="fa-solid fa-bars" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop"></i>
+              
+              <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="staticBackdropLabel">Offcanvas</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <div>
+                    I will not close if you click outside of me.
+                  </div>
+                </div>
+              </div>
+        </nav>
+    </div>
+    <div class="col acceuil">
+        Referencer
+    </div>
+    <div class="col notification">
+        <button type="button" class="btn"><i class="fa-solid fa-bell fa-shake"></i>
+            <span class="translate-middle badge rounded-pill">
+            0
+        </button>
+    </div>
+</header>
+  <main>
+    <section class="section1-referencer" id="infospatients">
+       <h1 class="section1-title">Informations du patient</h1>
+        <div  class="div-form-referencer">
+            <form class="infopatient" action="#" method="post" autocomplete="on">
+              <div class="row">
+                <div class="col-md-6">
+                  <div><label class="" for="nompatient">Nom du patient<span class="asterix">*</span></label></div>
+                  <div class="pa"><i class="fa-solid fa-user"></i><input class="" type="text" name="nompatient" id="nompatient" placeholder="Nom du patient"></div>
+                </div>
+                <div class="col-md-6">
+                  <div><label class="" for="prenompatient">Prénoms du patient<span class="asterix">*</span></label></div>
+                  <div class="pa"><i class="fa-solid fa-user"></i><input class="" type="text" name="prenompatient" id="prenompatient" placeholder="Prénoms du patient"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div><label class="" for="agepatient">Age du patient<span class="asterix">*</span> </label></div>
+                  <div class="pa"><input class="" type="number" name="agepatient" id="agepatient" placeholder="Age du patient"></div>
+                </div>
+                <div class="col-md-6">
+                  <div><label class="" for="datenaissance">Date de naissance du patient<span class="asterix">*</span></label></div>
+                  <div class="pa"><input class="" type="date" name="datenaissance" id="datenaissance"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div><label class="" for="sexepatientH">Sexe du patient<span class="asterix">*</span></label></div>
+                  <input class="" type="radio" name="sexepatient" id="sexepatientH"> Homme
+                  <input class="" type="radio" name="sexepatient" id="sexepatientF"> Femme
+                </div>
+                <div class="col-md-6">
+                  <div><label class="" for="professionpatient">Profession du patient<span class="asterix">*</span> </label></div>
+                  <div class="pa"><input class="" type="text" name="professionpatient" id="professionpatient" placeholder="Profession du patient"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div><label class="" for="contactpatient">Contact du patient</label></div>
+                  <div class="pa"><i class="fa-solid fa-phone"></i><input class="" type="tel" name="contactpatient" id="contactpatient" placeholder="Contact du patient"></div>
+                </div>
+                <div class="col-md-6">
+                  <div><label class="" for="nomprochepatient">Nom d'un parent(proche)<span class="asterix">*</span> </label></div>
+                  <div class="pa"><i class="fa-solid fa-user"></i><input class="" type="text" name="nomprochepatient" id="nomprochepatient" placeholder="Nom d'un parent (proche)"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div><label class="" for="prenomprochepatient">Prénom d'un parent(proche)<span class="asterix">*</span></label></div>
+                  <div class="pa"><i class="fa-solid fa-user"></i><input class="" type="tel" name="prenomprochepatient" id="prenomprochepatient" placeholder="Prénom d'un parent(proche)"></div>
+                </div>
+                <div class="col-md-6">
+                  <div><label class="" for="contactprochepatient">Contact d'un proche du patient<span class="asterix">*</span></label></div>
+                  <div class="pa"><i class="fa-solid fa-phone"></i><input class="" type="tel" name="contactprochepatient" id="contactprochepatient" placeholder="Contact d'un proche du patient"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div><label class="" for="motifpatient">Motif d'admission du patient<span class="asterix">*</span> </label></div>
+                  <div class="pa"><textarea class="" id="motifpatient" placeholder="Motif d'admission du patient"></textarea></div>
+                </div>
+              </div>
+              <div class="row">
+                <button class="btn btn-primary" id="suivant1" type="button">Suivant</button>
+              </div>
+            </form>
+        </div>
+    </section>
+    <section class="section2-referencer" id="infosconstantes">
+      <h1 class="section2-title">Informations sur les constantes</h1>
+        <div  class="div-form-referencer">
+          <form class="infoconstante" action="#" method="post" autocomplete="on">
+            <div class="row">
+              <div class="col-md-6">
+                <div><label class="" for="temperature">Température du patient<span class="asterix">*</span></label></div>
+                <div class="pa">
+                    <select value="temperature" name="temperature" id="temperature">
+                      <option value="null">Temperature du patient</option>
+                      <option name="TP-36.5" id="TP1">36.5°C</option>
+                      <option name="TP-36.8" id="TP2">36.8°C</option>
+                      <option name="TP-37" id="TP3">37°C</option>
+                      <option name="TP-37.5" id="TP4">37.5°C</option>
+                      <option name="TP-38" id="TP5">38°C</option>
+                      <option name="TP-39" id="TP6">39°C</option>
+                      <option name="TP-40" id="TP7">40°C</option>
+                    </select>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div><label class="" for="frequence-respiratoire">Fréquence respiratoire du patient<span class="asterix">*</span></label></div>
+                <div class="pa">
+                  <select value="frequence-respiratoire" name="frequence-respiratoire" id="frequence-respiratoire">
+                    <option value="null">Fréquence respiratoire du patient</option>
+                    <option name="FR-16" id="FR1">12 - 16 cycles</option>
+                    <option name="FR-20" id="FR2">17 - 20 cycles</option>
+                    <option name="FR-24" id="FR3">21 - 24 cycles</option>
+                    <option name="FR-28" id="FR4">25 - 28 cycles</option>
+                    <option name="FR-32" id="FR5">29 - 32 cycles</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div><label class="" for="frequence-cardiaque">Fréquence cardique du patient<span class="asterix">*</span> </label></div>
+                <div class="pa">
+                  <select value="frequence-cardiaque" name="frequence-cardiaque" id="frequence-cardiaque">
+                    <option value="null">Fréquence cardiaque du patient</option>
+                    <option name="FC-60" id="FC1">60 - 70 (bpm)</option>
+                    <option name="FC-20" id="FC2">71 - 80 (bpm)</option>
+                    <option name="FC-24" id="FC3">81 - 90 (bpm)</option>
+                    <option name="FC-28" id="FC4">91 - 100 (bpm)</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div><label class="" for="tension-arterielle">Tension artérielle du patient<span class="asterix">*</span></label></div>
+                <div class="pa">
+                  <select value="tension-arterielle" name="tension-arterielle" id="tension-arterielle">
+                    <option value="null">Tension arterielle du patient</option>
+                    <option name="TA-120/80" id="TA1">120/80 mmHg</option>
+                    <option name="TA-130/80" id="TA2">130/80 mmHg</option>
+                    <option name="TA-140/80" id="TA3">140/80 mmHg</option>
+                    <option name="TA-180/100" id="TA4">180/100 mmHg</option>
+                    <option name="TA-220/110" id="TA5">220/110 mmHg</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div><label class="" for="saturation-oxygene">Saturation en oxygène du patient<span class="asterix">*</span> </label></div>
+                <div class="pa">
+                  <select value="saturation-oxygene" name="saturation-oxygene" id="saturation-oxygene">
+                    <option value="null">Saturation en oxygène du patient</option>
+                    <option name="SO-70" id="SO1">70 - 79 %</option>
+                    <option name="SO-80" id="SO2">80 -  89%</option>
+                    <option name="SO-90" id="SO3">90 - 99 %</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div><label class="" for="groupe-sanguin">Groupe sanguin du patient<span class="asterix">*</span> </label></div>
+                <div class="pa">
+                  <select value="groupe-sanguin" name="groupe-sanguin" id="groupe-sanguin">
+                    <option value="null">Groupe sanguin du patient</option>
+                    <option name="AB+" id="AB+">AB+</option>
+                    <option name="AB-" id="AB-">AB-</option>
+                    <option name="A+" id="A+">A+</option>
+                    <option name="A-" id="A-">A-</option>
+                    <option name="B+" id="B+">B+</option>
+                    <option name="B-" id="B-">B-</option>
+                    <option name="O+<" id="O+<">O+</option>
+                    <option name="O-" id="O-">O-</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <button class="btn btn-danger col-md-6" id="precedent1" type="button">Précedent</button>
+              <button class="btn btn-primary col-md-6" id="suivant2" type="button">Suivant</button>
+            </div>
+          </form>
+        </div>
+    </section>
+    <section class="section3-referencer" id="infospathologies">
+      <h1 class="section3-title">Informations sur les sympthomes et pathologies</h1>
+        <div  class="div-form-referencer">
+          <form class="infopathologies" action="#" method="post" autocomplete="on">
+            <div class="row">
+              <div class="col-md-6">
+                <div><label class="" for="sympthomes">Choix des symtômes du patient<span class="asterix">*</span></label></div>
+                <div class="pa">
+                    <select value="sympthomes" name="sympthomes" id="sympthomes">
+                      <option value="null">Choix des symtômes du patient</option>
+                      <option name="SYMPTHOMES-1">Maux de tête </option>
+                      <option name="SYMPTHOMES-2">Maux de ventre</option>
+                      <option name="SYMPTHOMES-3">Toux</option>
+                      <option name="SYMPTHOMES-4">....</option>
+                      <option name="SYMPTHOMES-5">....</option>
+                      <option name="SYMPTHOMES-6">....</option>
+                      <option name="SYMPTHOMES-7">....</option>
+                    </select>
+                </div>
+              </div>
+              <div class="col-md-6">
+                  <div><label class="" for="diagnostic">Proposition de diagnostic<span class="asterix">*</span> </label></div>
+                  <div class="pa"><textarea class="" id="diagnostic" placeholder="Proposition de diagnostic"></textarea></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div><label class="" for="traitement-administrer">Traitement administré au patient<span class="asterix">*</span> </label></div>
+                <div class="pa"><textarea class="" id="traitement-administrer" placeholder="Traitement administré au patient"></textarea></div>
+              </div>
+              <div class="col-md-6">
+                <div><label class="" for="prescription-prise">Prescriptions/Ordonances prisent par le patient<span class="asterix">*</span> </label></div>
+                <div class="pa"><textarea class="" placeholder="Prescriptions/Ordonances prisent par le patient" id="prescription-prise"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div><label class="" for="conduite-a-tenir">Proposition de conduite à tenir<span class="asterix">*</span> </label></div>
+                <div class="pa"><textarea class="" placeholder="Proposition de conduite à tenir" id="conduite-a-tenir"></textarea>
+                </textarea></div>
+              </div>
+            </div>
+            <div class="row">
+              <button class="btn btn-danger col-md-6" id="precedent2" type="button">Précedent</button>
+              <button class="btn btn-primary col-md-6" id="suivant3" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Enregistrer</button> 
+              
+              <!-- **********************confirmation du l'enregistrement **********************************************************-->
+                                               
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Confirmez-vous l'enregistrement de ce dossier ?</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary col-md-6" data-bs-dismiss="modal">Annuler</button>
+                        <button type="button" class="btn btn-success col-md-6">Enregistrer</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </form>
+        </div>
+    </section>
+  </main>
+  <footer>
+    <div class="row footer-menu">
+      <div class="col"><a href="acceuil.html"><i class="fa-solid fa-house"></i></a><br><h6>Acceuil</h6></div>
+      <div class="col"><a href="liste-referencement.html"><i class="fa-solid fa-list-check"></i></a><br><h6>Liste</h6></div>
+      <div class="col add"><a href="referencement.html"><i class="fa-solid fa-plus-circle"></i></a></div>
+      <div class="col"><a href=""><i class="fa-solid fa-map"></i></a><br><h6>Lorem</h6></div>
+      <div class="col"><a href=""><i class="fa-solid fa-user"></i></a><br><h6>Profil</h6></div>
+    </div>
+ </footer>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script>
+  var suivant1=document.getElementById("suivant1");
+  var suivant2=document.getElementById("suivant2");
+  var precedent1=document.getElementById("precedent1");
+  var precedent2=document.getElementById("precedent2");
+  var section1=document.getElementById("infospatients");
+  var section2=document.getElementById("infosconstantes");
+  var section3=document.getElementById("infospathologies");
+
+  suivant1.addEventListener("click",function(){
+     section1.style.display="none";
+     section2.style.display="grid";
+     section3.style.display="none";
+  },false);
+  precedent1.addEventListener("click",function(){
+     section1.style.display="grid";
+     section2.style.display="none";
+     section3.style.display="none";
+  },false)
+  suivant2.addEventListener("click",function(){
+    section1.style.display="none";
+    section2.style.display="none";
+    section3.style.display="grid";
+    
+ },false)
+ precedent2.addEventListener("click",function(){
+  section1.style.display="none";
+  section2.style.display="grid";
+  section3.style.display="none";
+},false)
+</script>
+</body>
+</html>

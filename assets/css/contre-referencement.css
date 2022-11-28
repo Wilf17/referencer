@@ -1,0 +1,131 @@
+body{
+  background-color: #DDEBF0;
+  padding: 5%;
+}
+.fa-bars{
+  font-size: 135%;
+}
+.acceuil{
+  font-weight: bold;
+  text-align:center;
+}
+.fa-shake{
+  font-size: 135%;
+}
+.badge{
+  background-color: #171717;
+  color:#fff
+}
+.notification{
+  text-align: end;
+}
+  .pa{ 
+    width: auto;
+    background-color: #DDEBF0;
+    padding: 1%;
+    margin-bottom:3%;
+    border-radius: 10px 10px 10px 10px;
+    border: 2px ridge #7de6f2;
+  }
+  .div-form-referencer{
+    width:100%;
+    margin:auto;
+}
+textarea,select{
+  border:none;
+   width: 95%;
+   height: 42px;
+   background-color: #DDEBF0;
+}
+.btn-primar{
+  background-color:#0bbaf5;
+  border:none;
+  color:white;
+  font-size: 25px;
+  width:40%;
+  margin:auto;
+  margin-top: 3%;
+  border-radius: 10px 10px 10px 10px;
+  border-color:#fff;
+}
+.btn-primar:hover{
+  background-color:#72b736;
+  border-color:#72b736;
+  color:white;
+}
+.btn-danger{
+  background-color: #353535;
+  border:none;
+  font-size: 25px;
+  width:40%;
+  margin:auto;
+  margin-right: 18%;
+  margin-top: 3%;
+  border-radius: 10px 10px 10px 10px;
+}
+label{
+  margin-top: 2%;
+  font-weight:bold;
+  font-family: sans-serif;
+}
+textarea:focus{
+  border: 1px solid #97CBDC;
+}
+.asterix{
+  font-size: 22px;
+  color:#8e4646
+}
+main{
+  background-color: white;
+  margin-bottom:20%;
+  padding: 2%;
+  border-radius: 20px;
+  box-shadow: 4px 4px 4px #83d8f4;
+}
+footer{
+  margin-top:2%;
+  position: fixed;
+  left:0%;
+  bottom: 0px;
+  right:0px;
+}
+.footer-menu{
+   width:100%;
+   background-color: white;
+   margin:auto;
+   padding:2%;
+   border-radius: 20px 20px 0px 0px;
+}
+footer .fa-solid{
+    font-size: 160%;
+    text-align: center;
+}
+.footer-menu .fa-plus-circle{
+  font-size: 50px;
+  text-align: center;
+}
+footer .col{
+    text-align: center;
+}
+footer a {
+  color:#2b2929df
+}
+footer a :active{
+  color:#2b2929df
+}
+footer .col{
+  text-align: center;
+}
+header a{
+text-decoration: none;
+}
+.badge{
+  background-color: #51cdf7;
+  color:#fff
+}
+.notification{
+  text-align: end;
+}
+.fa-bell{
+  color:#2b2929df
+}

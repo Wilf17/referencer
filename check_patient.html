@@ -46,26 +46,26 @@
                 <div>
                     <div class="row">
                         <h5>Recherché à partir du :</h5>
-                       <div class="col"><input type="radio" onchange="hideB(this)" name="choice1" checked>Nom & Prénoms</div>
-                       <div class="col choice2"><input type="radio" onchange="hideA(this)" name="choice2">NPI</div> 
+                       <div class="col"><input type="radio" onchange="hideB(this)" name="choice" checked>NPI</div>
+                       <div class="col choice2"><input type="radio" onchange="hideA(this)" name="choice">Nom & Prénoms</div> 
                     </div>
                     <div class="row" id="A">
-                        <div class="row">
-                            <div class="col-md-6">
-                              <div><label class="" for="nompatient">Nom du patient<span class="asterix">*</span></label></div>
-                              <div class="pa"><i class="fa-solid fa-user"></i><input class="" type="text" name="nompatient" id="nompatient" placeholder="Nom du patient"></div>
-                            </div>
-                            <div class="col-md-6">
-                              <div><label class="" for="prenompatient">Prénoms du patient<span class="asterix">*</span></label></div>
-                              <div class="pa"><i class="fa-solid fa-user"></i><input class="" type="text" name="prenompatient" id="prenompatient" placeholder="Prénoms du patient"></div>
-                            </div>
-                        </div> 
+                      <div class="col-md-6">
+                        <div><label class="" for="NPIpatient">Recherche a partir du NPI<span class="asterix">*</span></label></div>
+                        <div class="pa"><input class="" type="number" name="NPIpatient" id="NPIpatient" placeholder="Entrez le NPI" ></div>
+                      </div> 
                     </div>
                     <div id="B" style="display:none">
+                      <div class="row">
                         <div class="col-md-6">
-                            <div><label class="" for="NPIpatient">Recherche a partir du NPI<span class="asterix">*</span></label></div>
-                            <div class="pa"><input class="" type="number" name="NPIpatient" id="NPIpatient" placeholder="Entrez le NPI" ></div>
+                          <div><label class="" for="nompatient">Nom du patient<span class="asterix">*</span></label></div>
+                          <div class="pa"><i class="fa-solid fa-user"></i><input class="" type="text" name="nompatient" id="nompatient" placeholder="Nom du patient"></div>
                         </div>
+                        <div class="col-md-6">
+                          <div><label class="" for="prenompatient">Prénoms du patient<span class="asterix">*</span></label></div>
+                          <div class="pa"><i class="fa-solid fa-user"></i><input class="" type="text" name="prenompatient" id="prenompatient" placeholder="Prénoms du patient"></div>
+                        </div>
+                      </div>  
                     </div>
                     <div class="row">
                         <button class="btn btn-primary"  type="button">Recherher</button>

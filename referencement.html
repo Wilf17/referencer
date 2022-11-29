@@ -275,42 +275,12 @@
     <div class="row footer-menu">
       <div class="col"><a href="index.html"><i class="fa-solid fa-house"></i></a><br><h6>Acceuil</h6></div>
       <div class="col"><a href="liste-referencement.html"><i class="fa-solid fa-list-check"></i></a><br><h6>Liste</h6></div>
-      <div class="col add"><a href="referencement.html"><i class="fa-solid fa-plus-circle"></i></a></div>
+      <div class="col add"><a href="check_patient.html"><i class="fa-solid fa-plus-circle"></i></a></div>
       <div class="col"><a href=""><i class="fa-solid fa-map"></i></a><br><h6>Lorem</h6></div>
       <div class="col"><a href=""><i class="fa-solid fa-user"></i></a><br><h6>Profil</h6></div>
     </div>
  </footer>
 <script src="assets/js/bootstrap.bundle.min.js"></script>
-<script>
-  var suivant1=document.getElementById("suivant1");
-  var suivant2=document.getElementById("suivant2");
-  var precedent1=document.getElementById("precedent1");
-  var precedent2=document.getElementById("precedent2");
-  var section1=document.getElementById("infospatients");
-  var section2=document.getElementById("infosconstantes");
-  var section3=document.getElementById("infospathologies");
-
-  suivant1.addEventListener("click",function(){
-     section1.style.display="none";
-     section2.style.display="grid";
-     section3.style.display="none";
-  },false);
-  precedent1.addEventListener("click",function(){
-     section1.style.display="grid";
-     section2.style.display="none";
-     section3.style.display="none";
-  },false)
-  suivant2.addEventListener("click",function(){
-    section1.style.display="none";
-    section2.style.display="none";
-    section3.style.display="grid";
-    
- },false)
- precedent2.addEventListener("click",function(){
-  section1.style.display="none";
-  section2.style.display="grid";
-  section3.style.display="none";
-},false)
-</script>
+<script src="assets/js/referencement.js"></script>
 </body>
 </html>

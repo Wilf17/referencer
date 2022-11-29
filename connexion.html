@@ -4,35 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Connexion </title>
+    <link href="assets/css/fontawesome-free-6.2.0-web/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/connexion.css">
+    <title>Connexion Referencer</title>
 </head>
 <body>
-   <div class="container-connexion-page">
-        <div class="content">
-            <div class="pics">
-                <img class="image-entete-connexion-page" src="assets/image/summer-701967_1280.png">
-            </div>
-            <div class="formulaire-connexion-page">
-                <form action="#" methode="post" autocomplete="on">
-                    <div class="login-connexion-page">
-                        <input type="text" value="" id="login" placeholder="pseudo ou e-mail">
+    <div class="container">
+        <div class="screen">
+            <div class="screen__content">
+                <h2>Connexion</h2>
+                <form class="login">
+                    <div class="login__field">
+                        <i class="login__icon fas fa-user"></i>
+                        <input type="text" class="login__input" placeholder="Nom d'utilisateur/ Email" required>
                     </div>
-                    <div class="password-connexion-page">
-                        <input type="password" value="" id="password" placeholder="Mot de passe">
+                    <div class="login__field">
+                        <i class="login__icon fas fa-lock"></i>
+                        <input type="password" class="login__input" placeholder="Mot de Passe" required>
                     </div>
-                    <div class="button-connexion-page">
-                        <button class="" id="connexion" type="submit">CONNEXION</button>
-                    </div>
-                    <div class="request-question-connexion-page">
-                        <a href="#">Mot de passe oublié ?</a>
-                    </div>
+                    <button class="button login__submit">
+                        <span class="button__text">Se Connecter</span>
+                    </button>				
                 </form>
+                <div class="social-login">
+                    <h3>Connexion via</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-login__icon fab fa-google"></a>
+                        <a href="#" class="social-login__icon fab fa-instagram"></a>
+                        <a href="#" class="social-login__icon fab fa-facebook"></a>
+                    </div>
+                </div>
             </div>
-            <div class="title-connexion-page">
-                <h2>referencer</h2>
-            </div>
+            <div class="screen__background">
+                <span class="screen__background__shape screen__background__shape4"></span>		
+                <span class="screen__background__shape screen__background__shape2"></span>
+                <span class="screen__background__shape screen__background__shape1"></span>
+            </div>		
         </div>
-   </div>
+    </div>
 </body>
 </html>

@@ -39,6 +39,41 @@
     </div>
 </header>
   <main>
+    <section class="section-checkpatient" id="patient_check">
+      <p><h1 class="section-title">Vérification du patient</h1></p>
+       <div  class="div-form-patientcheck">
+           <form class="patientcheck" action="#" method="post" autocomplete="on">
+              <div>
+                  <div class="row">
+                      <h5>Recherché à partir du :</h5>
+                     <div class="col"><input type="radio" onchange="hideB(this)" name="choice" checked>NPI</div>
+                     <div class="col choice2"><input type="radio" onchange="hideA(this)" name="choice">Nom & Prénoms</div> 
+                  </div>
+                  <div class="row" id="A">
+                    <div class="col-md-6">
+                      <div><label class="" for="NPIpatient">Recherche a partir du NPI<span class="asterix">*</span></label></div>
+                      <div class="pa"><input class="" type="number" name="NPIpatient" id="NPIpatient" placeholder="Entrez le NPI" ></div>
+                    </div> 
+                  </div>
+                  <div id="B" style="display:none">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div><label class="" for="nompatient">Nom du patient<span class="asterix">*</span></label></div>
+                        <div class="pa"><i class="fa-solid fa-user"></i><input class="" type="text" name="nompatient" id="nompatient" placeholder="Nom du patient"></div>
+                      </div>
+                      <div class="col-md-6">
+                        <div><label class="" for="prenompatient">Prénoms du patient<span class="asterix">*</span></label></div>
+                        <div class="pa"><i class="fa-solid fa-user"></i><input class="" type="text" name="prenompatient" id="prenompatient" placeholder="Prénoms du patient"></div>
+                      </div>
+                    </div>  
+                  </div>
+                  <div class="row">
+                      <button class="btn btn-primary"  type="button" id="recherche">Rechercher</button>
+                  </div>
+              </div>
+           </form>
+      </div>
+    </section>
     <section class="section1-referencer" id="infospatients">
        <h1 class="section1-title">Informations du patient</h1>
         <div  class="div-form-referencer">
@@ -289,5 +324,20 @@
  </footer>
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/referencement.js"></script>
+<script>
+  function hideA(x) {
+      if (x.checked) {
+        document.getElementById("A").style.display = "none";
+        document.getElementById("B").style.display = "block";
+      }
+    }
+   
+    function hideB(x) {
+      if (x.checked) {
+        document.getElementById("B").style.display = "none";
+        document.getElementById("A").style.display = "block";
+      }
+    }
+</script> 
 </body>
 </html>

@@ -22,7 +22,7 @@ body{
 main{
   margin-bottom:20%;
 }
-.div-form-referencer{
+.div-form-referencer,.div-form-patientcheck{
     border:3px solid #fff;
     border-radius: 15px;
     box-shadow: 5px 5px 5px  #fff;
@@ -95,7 +95,7 @@ label{
   max-width:40%;
   margin:auto
 }
-.section1-title,.section2-title,.section3-title{
+.section-title,.section1-title,.section2-title,.section3-title{
   text-align:center;
   width: 100%;
   margin:auto;
@@ -107,7 +107,7 @@ label{
   box-shadow: 3px 3px 3px #0bbaf5 ;
   background-color: white;
 }
-.section2-referencer,.section3-referencer{
+.section1-referencer,.section2-referencer,.section3-referencer{
   display: none;
 }
 footer{

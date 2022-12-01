@@ -27,3 +27,9 @@ section1.style.display="none";
 section2.style.display="grid";
 section3.style.display="none";
 },false)
+
+/******************------------------------------------------------------------------***************/
+function getsymthomesvalue(){
+   let sympthomes = document.getElementById("sympthomes").value;
+   console.log(sympthomes);
+}

@@ -365,25 +365,14 @@
             </div>
             <div class="row">
               <button class="btn btn-danger col-md-6" id="precedent2" type="button">Précedent</button>
-              <button class="btn btn-primary col-md-6" id="suivant3" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Enregistrer</button> 
-              
-              <!-- **********************confirmation du l'enregistrement **********************************************************-->
-                                               
-                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="staticBackdropLabel">Confirmez-vous l'enregistrement de ce dossier ?</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary col-md-6" data-bs-dismiss="modal">Annuler</button>
-                        <button type="button" class="btn btn-success col-md-6">Enregistrer</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <button class="btn btn-primary col-md-6" id="suivant3" type="button">Enregistrer</button> 
             </div>
+            <script>
+               let save = document.getElementById("suivant3");
+               save.addEventListener("click" ,function(){
+                alert("Enregistrement éffectuer avec succès")
+               })
+            </script>
           </form>
         </div>
     </section>

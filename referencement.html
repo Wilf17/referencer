@@ -287,7 +287,7 @@
                       <option name="SYMPTHOMES-4">Saignement rouge vif  Col ouvert & Pésence de Contraction utérine</option>
                       <option name="SYMPTHOMES-5">Saignement rouge vif du 3eme trimestre & sensation de matelas entre la présentation segment inférieur</option>
                       <option name="SYMPTHOMES-6">BDCF altéré,Saignement spontané noiratre du 3ere trimestre & Indolore provenant CU, Variation HU d’un examen à un autre, utérus du bois</option>
-                      <option name="SYMPTHOMES-7"> Placenta incomplet,Placenta non expulsé,Utérus non rétracté & Inversion visible de l’utérus, Un saignement permanent sans causes,</option>
+                      <option name="SYMPTHOMES-7">Placenta incomplet,Placenta non expulsé,Utérus non rétracté & Inversion visible de l’utérus, Un saignement permanent sans causes</option>
                     </select>
                 </div>
               </div>
@@ -308,37 +308,47 @@
                 let sympthomes = document.getElementById("sympthomes").value;
                 let pathologies = document.getElementById("pathologies");
                 let diagnostic = document.getElementById("diagnostic");
-                if(sympthomes == "Rupture uterine"){
-                 diagnostic.style.height ="100px";
-                 diagnostic.value = "Double Abd veineuse G16 ou G18 avec RL+ Test coagulation, Remplissage RL ou SS rapide si état de choc (EC), Sonde vésicale à demeure";
+
+                if(sympthomes == "Hypercinésies"){
+                 pathologies.value="Dystocies dynamiques";
+                 diagnostic.style.height="30px";
+                 diagnostic.value = "Référence immédiate";
                 }
-                else if (sympthomes =="Hematome retro placentaire"){
-                  diagnostic.style.height ="120px";
-                  diagnostic.value ="Double abord veineux G16 ou G18 avec RL ou SS 9%, Sonde vésicale à démeure, Test coagulation surveiller les constants + BDCF Oxygénothérapie 5L/mn";
+                else if (sympthomes =="Fond utérine non perçu & Douleur abdominal"){
+                  diagnostic.style.height="30px";
+                  pathologies.value = "Rupture utérine";
+                  diagnostic.style.height="100px";
+                  diagnostic.value ="Double Abd veineuse G16 ou G18 avec RL+ Test coagulation, Remplissage RL ou SS rapide si état de choc (EC), Sonde vésicale à demeure";
                 }
-                else if(sympthomes == "Placenta prévia hémorragique"){
-                  diagnostic.style.height ="75px";
-                  diagnostic.value ="Double abv 16G ou 18G avec RL ou SS, Test de coagulation, Sonde vésicale, Oxygenotherapie 5l/mn"
+                else if(sympthomes == "Saignement noirâtre du 1er trimestre & Douleur lombo-pelvienne"){
+                  diagnostic.style.height="30px";
+                  pathologies.value = "Grossesse extra-utérine";
+                  diagnostic.style.height="120px";
+                  diagnostic.value ="Triple ATB, Ampi 2g, Genta 160, Métronidazol 500mg, Evacuation utérine si nécessaire, Perfusion d’ocytocique 10UI : si col ouvert après l’ATB, 24H après l’ATB si col fermé";
                 }
-                else if (sympthomes == "Hemorragie de la delivrance"){
-                  diagnostic.style.height ="100px";
-                  diagnostic.value ="Double abv 16G ou 18G avec RL ou SS, Test de  coagulation, Sonde vésicale,                    Oxygenotherapie 5l/mngestion active de la GATPA et rapide ";
+                else if (sympthomes == "Saignement rouge vif  Col ouvert & Pésence de Contraction utérine"){
+                  diagnostic.style.height="30px";
+                  pathologies.value = "Avortement inévitable";
+                  diagnostic.style.height="100px";
+                  diagnostic.value ="Double Abd veineuse G16 ou G18 avec RL + Test coagulation, Remplissage RL ou SS rapide si état de choc (EC), Sonde vésicale à demeure ";
                 }
-                else if (sympthomes == "Avortement inévitable"){
-                  diagnostic.style.height ="100px";
-                  diagnostic.value ="Double Abd veineuse G16 ou G18 avec RL+ Test coagulation, Remplissage RL ou SS rapide si étatde choc (EC), Sonde vésicale à demeure";
+                else if (sympthomes == "Saignement rouge vif du 3eme trimestre & sensation de matelas entre la présentation segment inférieur"){
+                  diagnostic.style.height="30px";
+                  pathologies.value = "Placenta prévia hémorragique";
+                  diagnostic.style.height="100px";
+                  diagnostic.value ="Double abv 16G ou 18G avec RL ou SS, Test de coagulation, Sonde vésicale, Oxygenotherapie 5l/mn";
                 }
-                else if (sympthomes == "Préeclampsie"){
-                  diagnostic.style.height ="140px";
-                  diagnostic.value ="Repos au lit, Remplissage RL (pas de SS) 2,5L/24h, Surveiller la diurèse – TA ; FR toutes les 30mn pendant 2H, Maturation pulmonaire : célestène 12mg IVD à repeter dans 24H intervalle, Methyl Dopa cp 250mg-500mg-1g à 3g/j.";
+                else if (sympthomes == "BDCF altéré,Saignement spontané noiratre du 3ere trimestre & Indolore provenant CU, Variation HU d’un examen à un autre, utérus du bois"){
+                  diagnostic.style.height="30px";
+                  pathologies.value = "Hematome retro placentaire";
+                  diagnostic.style.height="100px";
+                  diagnostic.value ="Double abv 16G ou 18G avec RL ou SS, Test de coagulation, Sonde vésicale, Oxygenotherapie 5l/mn";
                 }
-                else if (sympthomes == "Eclampsie"){
-                  diagnostic.style.height ="140px";
-                  diagnostic.value ="Position latérale de sécurité, Libérer les voies aériennes par aspirations, Pose de canule de Guédel si possible, Double abd veineux G18 ou + RL, Diazépam 10mg IV lente en 2 minutes, renouvelable après 15min, Oxygénothérapie à 5ml/min au moins ou ventilation même au cours du transfert, Sonde vésicale ";
-                }
-                else if (sympthomes == "Grossesse extra-uterine"){
-                  diagnostic.style.height ="80px";
-                  diagnostic.value =" Abd veineux double G18,Remplissage vasculaire (RV) avec RL, Référence Immédiat après";
+                else if (sympthomes == "Placenta incomplet,Placenta non expulsé,Utérus non rétracté & Inversion visible de l’utérus, Un saignement permanent sans causes"){
+                  diagnostic.style.height="30px";
+                  pathologies.value = " Hémorragie de la délivrance";
+                  diagnostic.style.height="100px";
+                  diagnostic.value ="Double abv 16G ou 18G avec RL ou SS, Test de coagulation, Sonde vésicale, Oxygenotherapie 5l/mn gestion active de la GATPA et rapide ";
                 }
             }
             </script>

@@ -45,33 +45,60 @@
            <form class="patientcheck" action="#" method="post" autocomplete="on">
               <div>
                   <div class="row">
-                      <h5>Recherché à partir du :</h5>
+                      <h5>Rechercher à partir du :</h5>
                      <div class="col"><input type="radio" onchange="hideB(this)" name="choice" checked>NPI</div>
                      <div class="col choice2"><input type="radio" onchange="hideA(this)" name="choice">Nom & Prénoms</div> 
                   </div>
                   <div class="row" id="A">
                     <div class="col-md-6">
                       <div><label class="" for="NPIpatient">Recherche a partir du NPI<span class="asterix">*</span></label></div>
-                      <div class="pa"><input class="" type="number" name="NPIpatient" id="NPIpatient" placeholder="Entrez le NPI" ></div>
+                      <div class="pa"><input class="" type="number" name="npi" id="npi" placeholder="Entrez le NPI" ></div>
                     </div> 
                   </div>
                   <div id="B" style="display:none">
                     <div class="row">
                       <div class="col-md-6">
                         <div><label class="" for="nompatient">Nom du patient<span class="asterix">*</span></label></div>
-                        <div class="pa"><i class="fa-solid fa-user"></i><input class="" type="text" name="nompatient" id="nompatient" placeholder="Nom du patient"></div>
+                        <div class="pa"><i class="fa-solid fa-user"></i><input class="" type="text" name="nompatient" id="nom" placeholder="Nom du patient"></div>
                       </div>
                       <div class="col-md-6">
                         <div><label class="" for="prenompatient">Prénoms du patient<span class="asterix">*</span></label></div>
-                        <div class="pa"><i class="fa-solid fa-user"></i><input class="" type="text" name="prenompatient" id="prenompatient" placeholder="Prénoms du patient"></div>
+                        <div class="pa"><i class="fa-solid fa-user"></i><input class="" type="text" name="prenompatient" id="prenom" placeholder="Prénoms du patient"></div>
                       </div>
+                      <script>
+                        function hideA(x) {
+                            if (x.checked) {
+                              document.getElementById("A").style.display = "none";
+                              document.getElementById("B").style.display = "block";
+                            }
+                          }
+                         
+                          function hideB(x) {
+                            if (x.checked) {
+                              document.getElementById("B").style.display = "none";
+                              document.getElementById("A").style.display = "block";
+                            }
+                          }
+                      </script> 
                     </div>  
                   </div>
                   <div class="row">
-                      <button class="btn btn-primary"  type="button" id="recherche">Rechercher</button>
+                      <button class="btn btn-primary" type="button" id="recherche" onclick="getAndsetvalue();">Rechercher</button>
                   </div>
               </div>
            </form>
+              <script>
+                      function getAndsetvalue(){
+                        var n1 = document.getElementById("npi").value;
+                        var n2 = document.getElementById("nom").value;
+                        var n3 = document.getElementById("prenom").value;
+
+                        document.getElementById("npipatient").value=n1;
+                        document.getElementById("nompatient").value=n2;
+                        document.getElementById("prenompatient").value=n3;
+
+                      }
+              </script>
       </div>
     </section>
     <section class="section1-referencer" id="infospatients">
@@ -80,8 +107,8 @@
             <form class="infopatient" action="#" method="post" autocomplete="on">
               <div class="row">
                 <div class="col-md-6">
-                  <div><label class="" for="NPIpatient">NPI(Numéro Personel d'Indentification) du patient<span class="asterix">*</span></label></div>
-                  <div class="pa"><input class="" type="number" name="NPIpatient" id="NPIpatient" placeholder="Entrez le NPI" ></div>
+                  <div><label class="" for="NPI">NPI(Numéro Personel d'Indentification) du patient<span class="asterix">*</span></label></div>
+                  <div class="pa"><input class="" type="number" name="NPIpatient" id="npipatient" placeholder="Entrez le NPI"></div>
                 </div>
               </div>
               <div class="row">
@@ -249,43 +276,81 @@
         <div  class="div-form-referencer">
           <form class="infopathologies" action="#" method="post" autocomplete="on">
             <div class="row">
-              <div class="col-md-6">
-                <div><label class="" for="sympthomes">Choix des symtômes du patient<span class="asterix">*</span></label></div>
+              <div class="col-md-12">
+                <div><label class="" for="sympthomes">Choix des symptômes du patient<span class="asterix">*</span></label></div>
                 <div class="pa">
-                    <select value="sympthomes" name="sympthomes" id="sympthomes" onchange="getsymthomesvalue();">
+                    <select value="sympthomes" name="sympthomes" id="sympthomes" onchange="diagnosticsuggest();">
                       <option value="null">Choix des symtômes du patient</option>
-                      <option name="SYMPTHOMES-1">Rupture uterine </option>
-                      <option name="SYMPTHOMES-2"> Hematome retro placentaire</option>
-                      <option name="SYMPTHOMES-3">Placenta prévia hémorragique</option>
-                      <option name="SYMPTHOMES-4">Hemorragie de la delivrance</option>
-                      <option name="SYMPTHOMES-5">Menace d’avortement</option>
-                      <option name="SYMPTHOMES-6">Eclampie</option>
-                      <option name="SYMPTHOMES-7">Disproportion foeto-pelvienne</option>
-                      <option name="SYMPTHOMES-8">Retention placentaire</option>
+                      <option name="SYMPTHOMES-1">Hypercinésies</option>
+                      <option name="SYMPTHOMES-2">Fond utérine non perçu & Douleur abdominal</option>
+                      <option name="SYMPTHOMES-3">Saignement noirâtre du 1er trimestre & Douleur lombo-pelvienne</option>
+                      <option name="SYMPTHOMES-4">Saignement rouge vif  Col ouvert & Pésence de Contraction utérine</option>
+                      <option name="SYMPTHOMES-5">Saignement rouge vif du 3eme trimestre & sensation de matelas entre la présentation segment inférieur</option>
+                      <option name="SYMPTHOMES-6">BDCF altéré,Saignement spontané noiratre du 3ere trimestre & Indolore provenant CU, Variation HU d’un examen à un autre, utérus du bois</option>
+                      <option name="SYMPTHOMES-7"> Placenta incomplet,Placenta non expulsé,Utérus non rétracté & Inversion visible de l’utérus, Un saignement permanent sans causes,</option>
                     </select>
                 </div>
               </div>
+            </div>
+            <div class="row">
               <div class="col-md-6">
-                  <div><label class="" for="diagnostic">Proposition de diagnostic<span class="asterix">*</span> </label></div>
-                  <div class="pa"><textarea class="" id="diagnostic" placeholder="Proposition de diagnostic"></textarea></div>
+                <div><label class="" for="pathologies">Pathologie correspondante <span class="asterix">*</span> </label></div>
+                <div class="pa"><textarea class="" placeholder="Pathologie correspondante" id="pathologies"></textarea>
+                </textarea></div>
+              </div>
+              <div class="col-md-6">
+                <div><label class="" for="diagnostic">Proposition de diagnostic<span class="asterix">*</span> </label></div>
+                <div class="pa"><textarea class="" id="diagnostic" placeholder="Proposition de diagnostic" cols="80" rows="20"></textarea></div>
               </div>
             </div>
+            <script>
+              function diagnosticsuggest(){
+                let sympthomes = document.getElementById("sympthomes").value;
+                let pathologies = document.getElementById("pathologies");
+                let diagnostic = document.getElementById("diagnostic");
+                if(sympthomes == "Rupture uterine"){
+                 diagnostic.style.height ="100px";
+                 diagnostic.value = "Double Abd veineuse G16 ou G18 avec RL+ Test coagulation, Remplissage RL ou SS rapide si état de choc (EC), Sonde vésicale à demeure";
+                }
+                else if (sympthomes =="Hematome retro placentaire"){
+                  diagnostic.style.height ="120px";
+                  diagnostic.value ="Double abord veineux G16 ou G18 avec RL ou SS 9%, Sonde vésicale à démeure, Test coagulation surveiller les constants + BDCF Oxygénothérapie 5L/mn";
+                }
+                else if(sympthomes == "Placenta prévia hémorragique"){
+                  diagnostic.style.height ="75px";
+                  diagnostic.value ="Double abv 16G ou 18G avec RL ou SS, Test de coagulation, Sonde vésicale, Oxygenotherapie 5l/mn"
+                }
+                else if (sympthomes == "Hemorragie de la delivrance"){
+                  diagnostic.style.height ="100px";
+                  diagnostic.value ="Double abv 16G ou 18G avec RL ou SS, Test de  coagulation, Sonde vésicale,                    Oxygenotherapie 5l/mngestion active de la GATPA et rapide ";
+                }
+                else if (sympthomes == "Avortement inévitable"){
+                  diagnostic.style.height ="100px";
+                  diagnostic.value ="Double Abd veineuse G16 ou G18 avec RL+ Test coagulation, Remplissage RL ou SS rapide si étatde choc (EC), Sonde vésicale à demeure";
+                }
+                else if (sympthomes == "Préeclampsie"){
+                  diagnostic.style.height ="140px";
+                  diagnostic.value ="Repos au lit, Remplissage RL (pas de SS) 2,5L/24h, Surveiller la diurèse – TA ; FR toutes les 30mn pendant 2H, Maturation pulmonaire : célestène 12mg IVD à repeter dans 24H intervalle, Methyl Dopa cp 250mg-500mg-1g à 3g/j.";
+                }
+                else if (sympthomes == "Eclampsie"){
+                  diagnostic.style.height ="140px";
+                  diagnostic.value ="Position latérale de sécurité, Libérer les voies aériennes par aspirations, Pose de canule de Guédel si possible, Double abd veineux G18 ou + RL, Diazépam 10mg IV lente en 2 minutes, renouvelable après 15min, Oxygénothérapie à 5ml/min au moins ou ventilation même au cours du transfert, Sonde vésicale ";
+                }
+                else if (sympthomes == "Grossesse extra-uterine"){
+                  diagnostic.style.height ="80px";
+                  diagnostic.value =" Abd veineux double G18,Remplissage vasculaire (RV) avec RL, Référence Immédiat après";
+                }
+            }
+            </script>
             <div class="row">
               <div class="col-md-6">
                 <div><label class="" for="traitement-administrer">Traitement administré au patient<span class="asterix">*</span> </label></div>
                 <div class="pa"><textarea class="" id="traitement-administrer" placeholder="Traitement administré au patient"></textarea></div>
               </div>
               <div class="col-md-6">
-                <div><label class="" for="prescription-prise">Prescriptions/Ordonances prisent par le patient<span class="asterix">*</span> </label></div>
-                <div class="pa"><textarea class="" placeholder="Prescriptions/Ordonances prisent par le patient" id="prescription-prise"></textarea>
+                <div><label class="" for="prescription-prise">Prescriptions/Ordonannces prisent par le patient<span class="asterix">*</span> </label></div>
+                <div class="pa"><textarea class="" placeholder="Prescriptions/Ordonannces prisent..." id="prescription-prise"></textarea>
                 </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12">
-                <div><label class="" for="conduite-a-tenir">Proposition de conduite à tenir<span class="asterix">*</span> </label></div>
-                <div class="pa"><textarea class="" placeholder="Proposition de conduite à tenir" id="conduite-a-tenir"></textarea>
-                </textarea></div>
               </div>
             </div>
             <div class="row">
@@ -317,27 +382,12 @@
     <div class="row footer-menu">
       <div class="col"><a href="index.html"><i class="fa-solid fa-house"></i></a><br><h6>Acceuil</h6></div>
       <div class="col"><a href="liste-referencement.html"><i class="fa-solid fa-list-check"></i></a><br><h6>Liste</h6></div>
-      <div class="col add"><a href="referencement.html"><i class="fa-solid fa-plus-circle"></i></a></div>
+      <div class="col add"><a href="check_patient.html"><i class="fa-solid fa-plus-circle"></i></a></div>
       <div class="col"><a href=""><i class="fa-solid fa-map"></i></a><br><h6>Autres</h6></div>
       <div class="col"><a href=""><i class="fa-solid fa-user"></i></a><br><h6>Profil</h6></div>
     </div>
  </footer>
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/referencement.js"></script>
-<script>
-  function hideA(x) {
-      if (x.checked) {
-        document.getElementById("A").style.display = "none";
-        document.getElementById("B").style.display = "block";
-      }
-    }
-   
-    function hideB(x) {
-      if (x.checked) {
-        document.getElementById("B").style.display = "none";
-        document.getElementById("A").style.display = "block";
-      }
-    }
-</script> 
 </body>
 </html>

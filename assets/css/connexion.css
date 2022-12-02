@@ -8,7 +8,7 @@
 }
 
 body {
-	background: linear-gradient(90deg, #C7C5F4, #776BCC);
+	background: linear-gradient(90deg, #97CBDC, #97CBDC);
     padding:10%;
 }
 
@@ -21,11 +21,11 @@ body {
 }
 
 .screen {		
-	background: linear-gradient(90deg, #5D54A4, #7C78B8);		
+	background: linear-gradient(90deg, #0bbaf5, #97CBDC);		
 	position: relative;	
 	height: 600px;
 	width: 360px;	
-	box-shadow: 0px 0px 24px #5C5696;
+	box-shadow: 0px 0px 24px #fff;
     border-radius:0px 20px 0px 0px;
 }
 
@@ -37,13 +37,13 @@ body {
 
 h2{
     text-align: center;
-    background: #4C489D;
+    background: #0bbaf5;
 	font-size: 14px;
     padding:2%;
 	border-radius: 0px 20px 0px 20px;
     width: 100%;
 	color:#fff;
-	box-shadow: 0px 2px 2px #5C5696;
+	box-shadow: 0px 2px 2px #0bbaf5;
 }
 
 .screen__background {		
@@ -74,7 +74,7 @@ h2{
 .screen__background__shape2 {
 	height: 220px;
 	width: 220px;
-	background: #6C63AC;	
+	background: #97CBDC;	
 	top: -172px;
 	right: 0;	
 	border-radius: 32px;
@@ -83,7 +83,7 @@ h2{
 .screen__background__shape4 {
 	height: 400px;
 	width: 200px;
-	background: #7E7BB9;	
+	background: #0bbaf5;	
 	top: 420px;
 	right: 50px;	
 	border-radius: 60px;
@@ -103,7 +103,7 @@ h2{
 .login__icon {
 	position: absolute;
 	top: 30px;
-	color: #7875B5;
+	color: #0bbaf5;
 }
 
 .login__input {
@@ -121,7 +121,7 @@ h2{
 .login__input:focus,
 .login__input:hover {
 	outline: none;
-	border-bottom-color: #6A679E;
+	border-bottom-color: #0bbaf5;
 }
 
 .login__submit {
@@ -136,8 +136,8 @@ h2{
 	display: flex;
 	align-items: center;
 	width: 100%;
-	color: #4C489D;
-	box-shadow: 0px 2px 2px #5C5696;
+	color: #0bbaf5;
+	box-shadow: 0px 2px 2px #0bbaf5;
 	cursor: pointer;
 	transition: .2s;
 }
@@ -145,14 +145,14 @@ h2{
 .login__submit:active,
 .login__submit:focus,
 .login__submit:hover {
-	border-color: #6A679E;
+	border-color: #0bbaf5;
 	outline: none;
 }
 
 .button__icon {
 	font-size: 24px;
 	margin-left: auto;
-	color: #7875B5;
+	color: #0bbaf5;
 }
 
 .social-login {	
@@ -175,7 +175,7 @@ h2{
 	padding: 20px 10px;
 	color: #fff;
 	text-decoration: none;	
-	text-shadow: 0px 0px 8px #7875B5;
+	text-shadow: 0px 0px 8px #0bbaf5;
 }
 
 .social-login__icon:hover {

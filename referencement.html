@@ -310,46 +310,47 @@
                 let pathologies = document.getElementById("pathologies");
                 let diagnostic = document.getElementById("diagnostic");
 
-                if(sympthomes == "Hypercinésies"){
-                 pathologies.value="Dystocies dynamiques";
-                 diagnostic.style.height="30px";
-                 diagnostic.value = "Référence immédiate";
-                }
-                else if (sympthomes =="Fond utérine non perçu & Douleur abdominal"){
+                switch(sympthomes){
+                  case "Hypercinésies" :
+                  pathologies.value="Dystocies dynamiques";
+                  diagnostic.style.height="30px";
+                  diagnostic.value = "Référence immédiate"; break; 
+
+                  case "Fond utérine non perçu & Douleur abdominal" :
                   diagnostic.style.height="30px";
                   pathologies.value = "Rupture utérine";
                   diagnostic.style.height="100px";
-                  diagnostic.value ="Double Abd veineuse G16 ou G18 avec RL+ Test coagulation, Remplissage RL ou SS rapide si état de choc (EC), Sonde vésicale à demeure";
-                }
-                else if(sympthomes == "Saignement noirâtre du 1er trimestre & Douleur lombo-pelvienne"){
+                  diagnostic.value ="Double Abd veineuse G16 ou G18 avec RL+ Test coagulation, Remplissage RL ou SS rapide si état de choc (EC), Sonde vésicale à demeure"; break;
+
+                  case "Saignement noirâtre du 1er trimestre & Douleur lombo-pelvienne" :
                   diagnostic.style.height="30px";
                   pathologies.value = "Grossesse extra-utérine";
                   diagnostic.style.height="120px";
-                  diagnostic.value ="Triple ATB, Ampi 2g, Genta 160, Métronidazol 500mg, Evacuation utérine si nécessaire, Perfusion d’ocytocique 10UI : si col ouvert après l’ATB, 24H après l’ATB si col fermé";
-                }
-                else if (sympthomes == "Saignement rouge vif  Col ouvert & Pésence de Contraction utérine"){
+                  diagnostic.value ="Triple ATB, Ampi 2g, Genta 160, Métronidazol 500mg, Evacuation utérine si nécessaire, Perfusion d’ocytocique 10UI : si col ouvert après l’ATB, 24H après l’ATB si col fermé"; break;
+                  
+                  case "Saignement rouge vif  Col ouvert & Pésence de Contraction utérine" :
                   diagnostic.style.height="30px";
                   pathologies.value = "Avortement inévitable";
                   diagnostic.style.height="100px";
-                  diagnostic.value ="Double Abd veineuse G16 ou G18 avec RL + Test coagulation, Remplissage RL ou SS rapide si état de choc (EC), Sonde vésicale à demeure ";
-                }
-                else if (sympthomes == "Saignement rouge vif du 3eme trimestre & sensation de matelas entre la présentation segment inférieur"){
+                  diagnostic.value ="Double Abd veineuse G16 ou G18 avec RL + Test coagulation, Remplissage RL ou SS rapide si état de choc (EC), Sonde vésicale à demeure ";break;
+                  
+                  case "Saignement rouge vif du 3eme trimestre & sensation de matelas entre la présentation segment inférieur" :
                   diagnostic.style.height="30px";
                   pathologies.value = "Placenta prévia hémorragique";
                   diagnostic.style.height="100px";
-                  diagnostic.value ="Double abv 16G ou 18G avec RL ou SS, Test de coagulation, Sonde vésicale, Oxygenotherapie 5l/mn";
-                }
-                else if (sympthomes == "BDCF altéré,Saignement spontané noiratre du 3ere trimestre & Indolore provenant CU, Variation HU d’un examen à un autre, utérus du bois"){
+                  diagnostic.value ="Double abv 16G ou 18G avec RL ou SS, Test de coagulation, Sonde vésicale, Oxygenotherapie 5l/mn";break;
+                  
+                  case "BDCF altéré,Saignement spontané noiratre du 3ere trimestre & Indolore provenant CU, Variation HU d’un examen à un autre, utérus du bois" :
                   diagnostic.style.height="30px";
                   pathologies.value = "Hematome retro placentaire";
                   diagnostic.style.height="100px";
-                  diagnostic.value ="Double abv 16G ou 18G avec RL ou SS, Test de coagulation, Sonde vésicale, Oxygenotherapie 5l/mn";
-                }
-                else if (sympthomes == "Placenta incomplet,Placenta non expulsé,Utérus non rétracté & Inversion visible de l’utérus, Un saignement permanent sans causes"){
+                  diagnostic.value ="Double abv 16G ou 18G avec RL ou SS, Test de coagulation, Sonde vésicale, Oxygenotherapie 5l/mn";break;
+                  
+                  case "Placenta incomplet,Placenta non expulsé,Utérus non rétracté & Inversion visible de l’utérus, Un saignement permanent sans causes" :
                   diagnostic.style.height="30px";
                   pathologies.value = " Hémorragie de la délivrance";
                   diagnostic.style.height="100px";
-                  diagnostic.value ="Double abv 16G ou 18G avec RL ou SS, Test de coagulation, Sonde vésicale, Oxygenotherapie 5l/mn gestion active de la GATPA et rapide ";
+                  diagnostic.value ="Double abv 16G ou 18G avec RL ou SS, Test de coagulation, Sonde vésicale, Oxygenotherapie 5l/mn gestion active de la GATPA et rapide ";break;
                 }
             }
             </script>

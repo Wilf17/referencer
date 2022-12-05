@@ -1,0 +1,153 @@
+body{
+    background-color: #EDCCBB;
+    padding: 5%;
+}
+.fa-bars{
+    font-size: 135%;
+}
+.acceuil{
+    font-weight: bold;
+    text-align:center;
+}
+.fa-shake{
+    font-size: 135%;
+}
+.user-bjr{
+    color:#6a6a6a;
+}
+.user-salutation{
+    margin-bottom:8%;
+}
+.user-search{
+    margin-bottom: 5%;
+}
+#search{
+    width:100%;
+    border: none;
+    border-radius:0px 15px 15px 0px;
+ }
+ #btn-search{
+    background-color:white;
+    border:none;
+    border-radius:15px 0px 0px 15px;
+ }
+ #btn-search,#search{
+    height:50px;
+ }
+ .fa-search{
+    font-size:20px;
+ }
+ .suite-hello{
+    background-color:#A1745F;
+    border-radius: 10px;
+    width:100%;
+    margin:auto;
+    margin-bottom:2%;
+ }
+ .word-hello{
+    padding:4%;
+ }
+ .word-hello h2{
+    color:black;
+ }
+ .word-hello span{
+    color:#fff;
+    font-weight:bold;
+ }
+ .img-hello{
+    max-width:100%;  
+ }
+ .project{
+    text-align:start;
+ }
+ .project-link{
+    text-align: end;
+ }
+ .project-link a{
+    color:#fff;
+    text-decoration:none;
+ }
+ .project-link a:hover{
+    color:#6FA19C;
+ }
+ 
+.activity{
+    padding: auto;
+    width: 100%;
+    margin:auto;
+    text-align: center;
+}
+.activity-1,.activity-2,.activity-3,.activity-4{
+    background-color: #A1745F;
+    width: 100%;
+    margin:auto;
+    padding: 15%;
+    border:1px solid white;
+    border-radius: 15px;
+    font-weight: bold;
+}
+.section3{
+    margin-bottom: 15%;
+}
+main{
+    margin-bottom:20%;
+}
+footer{
+  margin-top:2%;
+  position: fixed;
+  left:0%;
+  bottom: 0px;
+  right:0px;
+}
+.footer-menu{
+   width:100%;
+   background-color: #EDCCBB;
+   border: 1px solid #fff;
+   margin:auto;
+   padding:2%;
+   border-radius: 20px 20px 0px 0px;
+}
+footer .fa-solid, footer .fa-regular{
+    font-size: 140%;
+    text-align: center;
+}
+.footer-menu .fa-plus-circle{
+    font-size: 50px;
+    text-align: center;
+}
+footer a {
+    color:#2b2929df
+}
+footer a :active{
+    color:#2b2929df
+}
+footer .col{
+    text-align: center;
+}
+header a{
+ text-decoration: none;
+}
+.badge{
+    background-color: #6FA19C;
+    color:#fff
+}
+.notification{
+    text-align: end;
+}
+.fa-bell{
+    color:#2b2929df
+}
+.fa-house{
+    color:white;
+}
+.home{
+    background-color:#EDCCBB;
+    border-radius: 15px;
+    padding-top: 1%;
+    padding-left:5%;
+    padding-right: 5%;
+    line-height:10px;
+    font-weight: bold;
+    color: #fff;
+}
+

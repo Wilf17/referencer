@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/gif" href="assets/image/jamie-street-hBzrr6m6-pc-unsplash (1).jpg">
+<link rel="icon" type="image/gif" href="assets/image/first-aid-gb3aeb4c65_640.png">
     <link href="assets/css/fontawesome-free-6.2.0-web/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Connexion Referencer</title>
@@ -53,9 +53,13 @@
         var username = document.getElementById("username").value;
         var password = document.getElementById("password").value;
         if ( username == "Sandrine" && password == "2022"){
-        alert ("Heureux de vous revoir !");
-        window.location = "acceuil.html"; // Redirecting to other page.
+            alert ("Heureux de vous revoir !");
+            window.location = "acceuil.html"; // Redirecting to other page.
         return false;
+        }
+        else if( username == "Jennifer" && password == "Jeni2022"){
+            alert ("Heureux de vous revoir !");
+            window.location = "acceuil_hopref.html"; // Redirecting to other page
         }
         else{
             alert("Veuillez entré un Nom d'utilisateur et un Mot de passe correct");

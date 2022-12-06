@@ -43,11 +43,7 @@ body{
  }
  progress{
      width: 80%;
-     background-color: #6FA19C;
-     height:5px;
-     color: #fff;
-     border: 1px solid #555353;
-     border-radius:20px;
+     height:8px;
  }
  .suite-hello{
     background-color:#97CBDC;

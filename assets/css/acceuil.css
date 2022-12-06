@@ -37,6 +37,18 @@ body{
  .fa-search{
     font-size:20px;
  }
+ .nombre{
+    color: #fff;
+    font-size: 14px;
+ }
+ progress{
+     width: 80%;
+     background-color: #6FA19C;
+     height:5px;
+     color: #fff;
+     border: 1px solid #555353;
+     border-radius:20px;
+ }
  .suite-hello{
     background-color:#97CBDC;
     border-radius: 10px;
@@ -81,7 +93,7 @@ body{
     background-color: #97CBDC;
     width: 100%;
     margin:auto;
-    padding: 15%;
+    padding: 7%;
     border:1px solid white;
     border-radius: 15px;
     font-weight: bold;

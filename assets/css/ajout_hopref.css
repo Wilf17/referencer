@@ -1,0 +1,178 @@
+body{
+    background-color: #EDCCBB;
+    padding: 5%;
+  }
+  .fa-bars{
+    font-size: 135%;
+  }
+  .acceuil{
+    font-weight: bold;
+    text-align:center;
+  }
+  .fa-shake{
+    font-size: 135%;
+  }
+  .badge{
+    background-color: #171717;
+    color:#fff
+  }
+  .notification{
+    text-align: end;
+  }
+  main{
+    margin-bottom:20%;
+  }
+  .div-form-referencer,.div-form-patientcheck{
+      border:3px solid #fff;
+      border-radius: 15px;
+      box-shadow: 5px 5px 5px  #fff;
+      padding: 2%;
+      width:100%;
+      margin:auto;
+  }
+  .pa{ 
+    width: auto;
+    background-color: rgb(255, 255, 255);
+    padding: 1%;
+    border-radius: 10px 10px 10px 10px;
+    border: 2px dashed #c8e5ef
+  }
+  input[type="text"],input[type="date"],input[type="number"],textarea,select{
+     border:none;
+      width: 92%;
+      height: 42px;
+      background-color: white;
+  }
+  input[type="tel"]{
+      border:none;
+      width: 91%;
+      height: 42px;
+      background-color: white;
+  }
+  section .fa-solid{
+    margin-right: 3%;
+   color:#A1745F;
+  }
+  input[type="radio"]{
+  height: 23px;
+  width: 23px;
+  color:#A1745F
+  }
+  input,textarea:focus{
+  border: 1px solid black;
+  }
+  .col-md-6,.col-md-12{
+      margin-bottom: 2%;
+  }
+  label{
+      font-weight:bold;
+      font-family: sans-serif;
+  }
+  .asterix{
+      color:#8e4646
+  }
+  .btn-primary{
+    background-color:#A1745F;
+    border:none;
+    font-size: 25px;
+    width:40%;
+    margin:auto;
+    margin-top: 3%;
+    border-radius: 10px 10px 10px 10px;
+  }
+  .btn-danger{
+    background-color: #353535;
+    border:none;
+    font-size: 25px;
+    width:40%;
+    margin:auto;
+    margin-top: 3%;
+    border-radius: 10px 10px 10px 10px;
+  }
+  .btn-danger:hover{
+    background-color: #854141;
+  }
+   .modal-footer .btn{
+    max-width:40%;
+    margin:auto
+  }
+  .section-title,.section1-title,.section2-title,.section3-title{
+    text-align:center;
+    width: 100%;
+    margin:auto;
+    color:#A1745F;
+    padding: 1%;
+    margin-bottom: 2%;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 15px ;
+    box-shadow: 3px 3px 3px #A1745F ;
+    background-color: white;
+  }
+  .section1-referencer,.section2-referencer,.section3-referencer{
+    display: none;
+  }
+  footer{
+    margin-top:8%;
+    position: fixed;
+    left:0%;
+    bottom: 0px;
+    right:0px;
+  }
+  .footer-menu{
+    width:100%;
+    background-color: #EDCCBB;
+    border: 1px solid #fff;
+    margin:auto;
+    padding:2%;
+    border-radius: 20px 20px 0px 0px;
+ }
+  footer .fa-solid{
+      font-size: 160%;
+      text-align: center;
+  }
+  .footer-menu .fa-plus-circle{
+    font-size: 50px;
+    text-align: center;
+  }
+  footer .col{
+      text-align: center;
+  }
+  footer a {
+    color:#403f3fdf
+}
+footer a :active{
+    color:#383838df
+}
+footer h6{
+    color:#403f3fdf
+}
+  footer .col{
+    text-align: center;
+  }
+  header a{
+  text-decoration: none;
+  }
+  .badge{
+    background-color: #6FA19C;
+    color:#fff
+}
+  .notification{
+    text-align: end;
+  }
+  .fa-bell{
+    color:#2b2929df
+  }
+  .fa-plus-circle{
+    color:#fff;
+  }
+  .addq{
+    background-color:#51cdf7;
+    border-radius: 15px;
+    padding-top: 1%;
+    padding-left:5%;
+    padding-right: 5%;
+    line-height:10px;
+    color: #fff;
+  }
+  
+  

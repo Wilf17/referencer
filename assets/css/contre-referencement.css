@@ -1,5 +1,5 @@
 body{
-  background-color: #DDEBF0;
+  background-color: #EDCCBB;
   padding: 5%;
 }
 .fa-bars{
@@ -12,20 +12,17 @@ body{
 .fa-shake{
   font-size: 135%;
 }
-.badge{
-  background-color: #171717;
-  color:#fff
-}
+
 .notification{
   text-align: end;
 }
   .pa{ 
     width: auto;
-    background-color: #DDEBF0;
+    background-color: #EDCCBB;
     padding: 1%;
     margin-bottom:3%;
     border-radius: 10px 10px 10px 10px;
-    border: 2px ridge #7de6f2;
+    border: 2px ridge #fff;
   }
   .div-form-referencer{
     width:100%;
@@ -35,23 +32,19 @@ textarea,select{
   border:none;
    width: 95%;
    height: 42px;
-   background-color: #DDEBF0;
+   background-color: #EDCCBB;
 }
 .btn-primar{
-  background-color:#0bbaf5;
+  background-color:#6FA19C;
   border:none;
   color:white;
   font-size: 25px;
   width:40%;
   margin:auto;
+  padding: auto;
   margin-top: 3%;
   border-radius: 10px 10px 10px 10px;
   border-color:#fff;
-}
-.btn-primar:hover{
-  background-color:#72b736;
-  border-color:#72b736;
-  color:white;
 }
 .btn-danger{
   background-color: #353535;
@@ -65,22 +58,23 @@ textarea,select{
 }
 label{
   margin-top: 2%;
+  color: #fff;
   font-weight:bold;
   font-family: sans-serif;
 }
 textarea:focus{
-  border: 1px solid #97CBDC;
+  border: 1px solid #EDCCBB;
 }
 .asterix{
   font-size: 22px;
   color:#8e4646
 }
 main{
-  background-color: white;
+  background-color: #A1745F;
   margin-bottom:20%;
   padding: 2%;
   border-radius: 20px;
-  box-shadow: 4px 4px 4px #83d8f4;
+  box-shadow: 4px 4px 4px #ffffff;
 }
 footer{
   margin-top:2%;
@@ -91,7 +85,8 @@ footer{
 }
 .footer-menu{
    width:100%;
-   background-color: white;
+   background-color: #EDCCBB;
+   border: 1px solid #fff;
    margin:auto;
    padding:2%;
    border-radius: 20px 20px 0px 0px;
@@ -108,10 +103,13 @@ footer .col{
     text-align: center;
 }
 footer a {
-  color:#2b2929df
+  color:#403f3fdf
 }
 footer a :active{
-  color:#2b2929df
+  color:#383838df
+}
+footer h6{
+  color:#403f3fdf
 }
 footer .col{
   text-align: center;
@@ -120,7 +118,7 @@ header a{
 text-decoration: none;
 }
 .badge{
-  background-color: #51cdf7;
+  background-color: #6FA19C;
   color:#fff
 }
 .notification{

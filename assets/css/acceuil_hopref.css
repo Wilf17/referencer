@@ -116,10 +116,13 @@ footer .fa-solid, footer .fa-regular{
     text-align: center;
 }
 footer a {
-    color:#2b2929df
+    color:#403f3fdf
 }
 footer a :active{
-    color:#2b2929df
+    color:#383838df
+}
+footer h6{
+    color:#403f3fdf
 }
 footer .col{
     text-align: center;
@@ -138,6 +141,9 @@ header a{
     color:#2b2929df
 }
 .fa-house{
+    color:white;
+}
+.lol{
     color:white;
 }
 .home{

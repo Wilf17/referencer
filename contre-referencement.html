@@ -49,13 +49,13 @@
                 <div class="pa">
                     <select value="sympthomes-releves" name="sympthomes-releves" id="sympthomes">
                       <option value="null">Sympthomes relevés</option>
-                      <option name="SYMPTHOMES-1">Maux de tête </option>
-                      <option name="SYMPTHOMES-2">Maux de ventre</option>
-                      <option name="SYMPTHOMES-3">Toux</option>
-                      <option name="SYMPTHOMES-4">....</option>
-                      <option name="SYMPTHOMES-5">....</option>
-                      <option name="SYMPTHOMES-6">....</option>
-                      <option name="SYMPTHOMES-7">....</option>
+                      <option name="SYMPTHOMES-1">Hypercinésies</option>
+                      <option name="SYMPTHOMES-2">Fond utérine non perçu & Douleur abdominal</option>
+                      <option name="SYMPTHOMES-3">Saignement noirâtre du 1er trimestre & Douleur lombo-pelvienne</option>
+                      <option name="SYMPTHOMES-4">Saignement rouge vif  Col ouvert & Pésence de Contraction utérine</option>
+                      <option name="SYMPTHOMES-5">Saignement rouge vif du 3eme trimestre & sensation de matelas entre la présentation segment inférieur</option>
+                      <option name="SYMPTHOMES-6">BDCF altéré,Saignement spontané noiratre du 3ere trimestre & Indolore provenant CU, Variation HU d’un examen à un autre, utérus du bois</option>
+                      <option name="SYMPTHOMES-7">Placenta incomplet,Placenta non expulsé,Utérus non rétracté & Inversion visible de l’utérus, Un saignement permanent sans causes</option>
                     </select>
                 </div>
               </div>
@@ -85,7 +85,7 @@
                 <div><label class="" for="issue-patient">Issue du patient<span class="asterix">*</span> </label></div>
                 <div class="pa">
                   <select value="issue-patient" name="issue-patient" id="issue-patient">
-                    <option value="null">Issue du patient </option>
+                    <option value="null">Issue du patient</option>
                     <option name="Etat-1">Guérison</option>
                     <option name="Etat-2">Décès</option>
                   </select>
@@ -104,34 +104,24 @@
             </div>
             <div class="row">
               <span><a href="liste-referencement.html"><input type="button" class="btn btn-danger" id="precedent" value="Annuler"></a>
-              <input class="btn btn-primar" value="Enregistrer" id="Enregistrer" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop"></span>
-
-              <!-- **********************confirmation du contre-referencement*****************************************************-->
-                                               
-                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="staticBackdropLabel">Vous confirmez l'envoi de la contre-référence ?</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
-                        <button type="button" class="btn btn-success">Envoyer</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <input class="btn btn-primar" value="Envoyer" id="Envoyer" type="button"></span>
             </div>
           </form>
+          <script>
+            let save = document.getElementById("Envoyer");
+            save.addEventListener("click" ,function(){
+             alert("Contre référencement effectuée succès");
+             window.location = "acceuil_hopref.html"; 
+            })
+         </script>
         </div>
     </section>
   </main>
   <footer>
     <div class="row footer-menu">
-      <div class="col"><a href="acceuil.html"><i class="fa-solid fa-house"></i></a><br><h6>Acceuil</h6></div>
-      <div class="col"><a href="liste-referencement.html"><i class="fa-solid fa-list-check"></i></a><br><h6>Liste</h6></div>
-      <div class="col"><a href="referencement.html"><i class="fa-solid fa-plus-circle"></i></a></div>
+      <div class="col"><a href="acceuil_hopref.html"><i class="fa-solid fa-house"></i></a><br><h6 class="lol">Acceuil</h6></div>
+      <div class="col list"><a href="liste-hopref.html"><i class="fa-solid fa-list-check"></i></a><br><h6>List</h6></div>
+      <div class="col"><a href="ajout_hopref.html"><i class="fa-solid fa-plus-circle"></i></a></div>
       <div class="col"><a href=""><i class="fa-solid fa-user"></i></a><br><h6>Profil</h6></div>
       <div class="col"><a href=""><i class="fa-solid fa-sliders"></i></a><br><h6>Autres</h6></div>
     </div>
